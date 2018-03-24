@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="mdui-container si-container">
+    {% for icon in site.data.icon %}
+    <div class="si-card-container">
+        <div class="mdui-card si-card">
+            <div class="si-card-image">
+                <img src="{{ icon.img | relative_url }}" alt="pdc">
+            </div>
+            <div class="si-card-details">
+                <h4>{{icon.name}}</h4>
+                {% if icon.url %}
+                <a href="{{icon.url}}" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"><i class="mdui-icon material-icons">link</i></a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>

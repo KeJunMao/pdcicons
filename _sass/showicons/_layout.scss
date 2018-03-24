@@ -1,0 +1,112 @@
+.si-fix{
+    @media (max-width: 650px){
+        .mdui-toolbar{
+            span{
+                display: none!important;
+            }
+        }
+    }
+    .mdui-toolbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .si-header-button{
+        animation: opac .8s;
+        @keyframes opac{from{opacity:0} to{opacity:1}}
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 99;
+        i{
+            color: white;
+        }
+    }
+    .mdui-toolbar::before{
+        background-position: 8px;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        animation: opac .8s;
+        color: #fff;
+        content: "ShowIcons";
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .02em;
+        left: 0;
+        padding: 0 12px 0 56px;
+        position: fixed;
+        top: 0;
+    }
+    .si-container{
+        z-index: 2;
+        margin-top: 56px;
+    }
+}
+.si-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 0;
+    .si-card{
+        height: 300px;
+        width: 272px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        .si-card-image{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-box-flex: 1;
+            -webkit-box-pack: center;
+            align-items: center;
+            flex: 1;
+            justify-content: center;
+            width: 100%;
+            img{
+                width: 192px;
+                height: 192px;
+            }
+        }
+        .si-card-details{
+            -webkit-box-align: center;
+            -webkit-box-pack: center;
+            -webkit-box-sizing: border-box;
+            align-items: center;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            padding: 0 8px;
+            width: 100%;
+            h4{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex: 1;
+                height: 72px;
+                margin: 0 16px;
+                font-weight: 300;
+                font-size: 20px;
+                align-items: center;
+            }
+            a{
+                margin: 0 8px;
+            }
+        }
+    }
+}
+
+.si-card-container{
+    display: inline-block;
+    padding: 16px;
+}

@@ -1,0 +1,15 @@
+header{
+    height: 328px;
+    background-position: 50% 50%;
+    background-size: cover;
+    .si-header-button{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        float: right;
+        padding: 8px 12px; 
+        i{
+            transition: color .3s;
+        }
+    }
+}
