@@ -45,14 +45,11 @@
     }
 }
 .si-container{
-    @media (max-width: 661px) {
-        justify-content: center;
-    }
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 16px 0;
     .si-card{
         height: 300px;
@@ -112,6 +109,9 @@
 .si-card-container{
     display: inline-block;
     padding: 16px;
+}
+.si-card-container-none{
+    width: 304px;
 }
 
 body{
